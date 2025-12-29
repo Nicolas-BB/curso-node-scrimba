@@ -1,3 +1,16 @@
 :root {
-  --title-font: 'Creepster', sans-serif;
+  --title-font-family: 'Creepster', sans-serif;
+  --title-font-size: 48px;
+  --title-line-height: calc(48px * 1.4);
+
+  --subtitle-font-family: 'Creepster', sans-serif;
+  --subtitle-font-size: 32px;
+  --subtitle-line-height: calc(32px * 1.4);
+
+  --body-font-family: 'Inter', sans-serif;
+  --body-font-size: 16px;
+  --body-line-height: calc(16px * 1.4);
+
+  --light-font-color: hsl(0, 0%, 98%);
+  --dark-font-color: hsl(0, 0%, 2%);
 }

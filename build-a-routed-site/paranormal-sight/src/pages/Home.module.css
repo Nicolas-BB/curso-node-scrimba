@@ -8,17 +8,17 @@
 }
 
 .h1 {
-    font-family: var(--title-font);
-    font-size: 48px;
-    line-height: calc(48px*1.4);
-    color: hsl(0, 0%, 98%);
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--light-font-color);
     text-align: center;
 }
 
 .h2 {
-    font-family: var(--title-font);
-    font-size: 32px;
-    line-height: calc(32px*1.4);
-    color: hsl(0, 0%, 98%);
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    line-height: var(--subtitle-line-height);
+    color: var(--light-font-color);
     text-align: center;
 }

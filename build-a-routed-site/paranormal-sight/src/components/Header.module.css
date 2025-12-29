@@ -14,7 +14,9 @@
 }
 
 .ul>li>a {
-    color: white;
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    color: var(--light-font-color);
     text-decoration: none;
 }
 

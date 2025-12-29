@@ -6,3 +6,10 @@
     align-items: center;
     padding: 32px;
 }
+
+.h1 {
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--light-font-color);
+}
