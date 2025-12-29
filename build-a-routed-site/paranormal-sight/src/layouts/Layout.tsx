@@ -4,10 +4,10 @@ import { Footer } from '../components/Footer.tsx'
 
 export function Layout() {
     return (
-        <>
+        <div className='container'>
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
