@@ -1,10 +1,22 @@
 import styles from './Upload.module.css'
 
 export function Upload() {
+    const teste = (e: any) => {
+        e.preventDefault()
+
+        const form = e.currentTarget
+        const title = form.title.value
+        const date = form.date.value
+        const location = form.location.value
+        const details = form.details.value
+
+        console.log({ title, date, location, details })
+    }
+
     return (
         <main className={styles.main}>
             <h1>Adicionar avistamento</h1>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={(e) => teste(e)}>
                 <div>
                     <label className={styles.label}>
                         Título:
