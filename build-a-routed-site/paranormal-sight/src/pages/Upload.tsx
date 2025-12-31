@@ -8,9 +8,9 @@ export function Upload() {
         const title = form.title.value
         const date = form.date.value
         const location = form.location.value
-        const details = form.details.value
+        const body = form.body.value
 
-        console.log({ title, date, location, details })
+        console.log({ title, date, location, body })
     }
 
     return (
@@ -48,8 +48,8 @@ export function Upload() {
                         Detalhes:
                         <textarea
                             className={styles.detailsInput}
-                            name="details"
-                            id="details"
+                            name="body"
+                            id="body"
                             placeholder='Eu estava caminhando na rua à noite quando...'
                         />
                     </label>
