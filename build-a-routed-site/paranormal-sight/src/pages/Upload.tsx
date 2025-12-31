@@ -32,7 +32,7 @@ export function Upload() {
                             placeholder='Ivaiporã, PR'
                         />
                     </label>
-                    <label className={styles.label}>
+                    <label className={`${styles.label} ${styles.detailsLabel}`}>
                         Detalhes:
                         <textarea
                             className={styles.detailsInput}
