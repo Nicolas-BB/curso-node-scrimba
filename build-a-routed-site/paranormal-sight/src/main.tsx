@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './layouts/Layout.tsx'
 import { Home } from './pages/Home.tsx'
 import { Read } from './pages/Read.tsx'
+import { Upload } from './pages/Upload.tsx'
 
 import './styles/global.css'
 import './styles/variables.css'
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/read',
         element: <Read />
+      },
+      {
+        path: '/upload',
+        element: <Upload />
       }
     ]
   }

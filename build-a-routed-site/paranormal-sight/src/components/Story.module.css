@@ -1,0 +1,29 @@
+.article {
+    width: 90%;
+    max-height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: var(--dark-font-color);
+    padding: 16px;
+    border-radius:16px;
+    overflow-wrap: break-word;
+}
+
+.article span {
+    font-family: var(--legend-font-family);
+    font-size: var(--legend-font-size);
+    line-height: var(--legend-line-height);
+}
+
+.article h2 {
+    font-family: var(--body-font-family);
+    font-size: 20px;
+    line-height: calc(20px * 1.4);
+}
+
+.article p {
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}

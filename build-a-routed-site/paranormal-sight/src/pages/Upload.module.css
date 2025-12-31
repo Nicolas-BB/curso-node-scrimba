@@ -1,0 +1,85 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.main h1 {
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--light-font-color);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 16px;
+}
+
+.form div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form button {
+    all: unset;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    line-height: var(--subtitle-line-height);
+    text-align: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font-family);
+    color: var(--light-font-color);
+    font-weight: bold;
+    gap: 8px;
+}
+
+.label input {
+    all: unset;
+    background-color: white;
+    border: 2px hsl(0, 0%, 80%) solid;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--dark-font-color);
+    font-weight: normal;
+    cursor: text;
+}
+
+.detailsInput {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    word-break: break-word;
+    background-color: white;
+    border: 2px hsl(0, 0%, 80%) solid;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--dark-font-color);
+    font-weight: normal;
+    cursor: text;
+}

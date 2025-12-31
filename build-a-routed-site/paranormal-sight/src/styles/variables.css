@@ -11,6 +11,10 @@
   --body-font-size: 16px;
   --body-line-height: calc(16px * 1.4);
 
+  --legend-font-family: 'Inter', sans-serif;
+  --legend-font-size: 14px;
+  --legend-line-height: calc(14px * 1.4);
+
   --light-font-color: hsl(0, 0%, 98%);
   --dark-font-color: hsl(0, 0%, 2%);
 }
