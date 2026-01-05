@@ -25,15 +25,11 @@ export function Story({ date, location, title, body }: StoryProps) {
         <article className={styles.article}>
             <span>{date}, {location}</span>
             <h2>{title}</h2>
-            <p
-                className={!expand ? styles.body : undefined}
-                ref={bodyRef}
-            >
+            <p className={!expand ? styles.body : undefined} ref={bodyRef}>
                 {body}
             </p>
-
             {button && (
-                <button onClick={() => setExpand(v => !v)}>
+                <button className={styles.expandButton} onClick={() => setExpand(v => !v)}>
                     {expand ? 'Ler menos' : 'Ler mais'}
                 </button>
             )}

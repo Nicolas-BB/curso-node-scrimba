@@ -1,12 +1,13 @@
 .article {
     width: 90%;
-    /* max-height: 30%; */
     display: flex;
     flex-direction: column;
+    gap: 8px;
     background-color: white;
-    color: var(--dark-font-color);
     padding: 16px;
     border-radius: 16px;
+
+    color: var(--dark-font-color);
     overflow-wrap: break-word;
 }
 
@@ -33,4 +34,18 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.expandButton {
+    all: unset;
+    background-color: black;
+    padding: 8px 32px;
+    border-radius: 8px;
+
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    color: var(--light-font-color);
+    text-align: center;
+
+    cursor: pointer;
 }
