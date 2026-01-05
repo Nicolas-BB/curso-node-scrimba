@@ -7,11 +7,10 @@ import { getDataByQueryParams } from './utils/getDataByQueryParams.js'
 const PORT = 8000
 
 const server = http.createServer(async (req, res) => {
-
     const destinations = await getDataFromDB()
     const urlObj = new URL(req.url, `http://${req.headers.host}`)
 
-    if (urlObj.pathname === '/api' && req.method === 'GET') {
+    if (urlObj.pathname === '/api' && req.method === 'GET') { // Retorna geral
         const response = getDataByQueryParams(Object.fromEntries(urlObj.searchParams), destinations)
 
         sendJSONResponse(res, 200, response)
@@ -28,9 +27,6 @@ const server = http.createServer(async (req, res) => {
     } else {
         sendJSONResponse(res, 404, { error: 'não encontrado' })
     }
-
-    console.log(urlObj)
-    console.log(Object.fromEntries(urlObj.searchParams))
 })
 
 server.listen(PORT, () => console.log(`Server running on port: ${PORT}`))
