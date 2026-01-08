@@ -7,6 +7,10 @@ import { getDataByQueryParams } from './utils/getDataByQueryParams.js'
 const PORT = 8000
 
 const server = http.createServer(async (req, res) => {
+    res.setHeader('Content-Type', 'application/json')
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Methods', 'GET')
+
     const destinations = await getDataFromDB()
     const urlObj = new URL(req.url, `http://${req.headers.host}`)
 
