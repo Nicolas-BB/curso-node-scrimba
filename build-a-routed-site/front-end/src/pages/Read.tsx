@@ -27,6 +27,8 @@ export function Read() {
             .finally(() => {
                 setLoading(false)
             })
+
+        console.log(stories)
     }, [])
 
     return (
