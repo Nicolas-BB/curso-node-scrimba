@@ -5,11 +5,14 @@
   "main": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "npm server.ts"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
   },
   "author": "Nícolas",
   "license": "ISC",
   "dependencies": {
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {

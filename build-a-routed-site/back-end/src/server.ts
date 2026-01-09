@@ -1,5 +1,6 @@
 import http from 'node:http'
 import { stories } from './data/stories.js'
+import { sendResponse } from './utils/sendResponse.js'
 
 const PORT = 8000
 
@@ -12,11 +13,12 @@ const server = http.createServer(async (req, res) => {
 
     const urlObj = new URL(req.url ?? '/', `http://${req.headers.host}`)
 
-    if (req.url === '/api') {
-        res.end
+    if (urlObj.pathname === '/api') {
+        sendResponse(res, 200, data)
+        console.log('EnViado')
+    } else {
+        sendResponse(res, 404, 'Não encontrado')
     }
 })
-
-console.log(import.meta.dirname)
 
 server.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`))

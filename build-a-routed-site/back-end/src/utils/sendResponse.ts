@@ -6,7 +6,7 @@ type functionTypes = {
     response: unknown
 }
 
-export function sendResponse({res, statusCode, response}: functionTypes) {
+export function sendResponse(res: ServerResponse<IncomingMessage>, statusCode: number, response: unknown) {
     res.statusCode = statusCode
-    res.end(response)
+    res.end(JSON.stringify(response))
 }
